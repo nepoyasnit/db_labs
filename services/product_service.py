@@ -26,3 +26,15 @@ class ProductService:
         if query:
             return query
 
+    def update(self, shop_name, old_name, new_name, price, promo, producer,
+               country, description, category, weight, photo_url):
+        shop_id = self.engine.get_query_result(sql_path=SHOP_BY_NAME_SCRIPT_PATH,
+                                               fields=(shop_name,))[0][0]
+        query = self.engine.get_query_result(sql_path=PRODUCT_UPDATE_SCRIPT_PATH,
+                                             fields=(shop_id, new_name, price, promo, producer,
+                                                     country, description, category,
+                                                     weight, photo_url, old_name))
+        if query:
+            return OK_CODE
+
+

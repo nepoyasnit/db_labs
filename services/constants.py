@@ -24,8 +24,10 @@ SHOP_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scr
 # PRODUCT PATHS
 PRODUCT_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/create_script'
                               '.sql')
-PRODUCT_READ_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/read_script.sql'
-PRODUCT_UPDATE_SCRIPT_PATH = ''
+PRODUCT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/read_script'
+                            '.sql')
+PRODUCT_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/update_script'
+                              '.sql')
 PRODUCT_DELETE_SCRIPT_PATH = ''
 SHOP_BY_NAME_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts'
                             '/shop_by_name_script.sql')

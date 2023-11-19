@@ -7,3 +7,10 @@ from services.product_service import ProductService
 #                               'sosedi/test.jpg'))
 
 # print(ProductService().read('test'))
+
+# print(ProductService().update('Соседи','test',
+#                               'test1',10, 0,
+#                               'test',
+#                                'test', 'test',
+#                                'test', 0.43,
+#                                'sosedi/test.jpg'))
