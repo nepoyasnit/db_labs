@@ -12,7 +12,8 @@ RESTARAUNT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sq
                                '/read_script.sql')
 RESTARAUNT_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts'
                                  '/update_script.sql')
-RESTARAUNT_DELETE_SCRIPT_PATH = ''
+RESTARAUNT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts'
+                                 '/delete_script.sql')
 
 # CODES
 OK_CODE = 200
