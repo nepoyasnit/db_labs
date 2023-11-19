@@ -14,3 +14,5 @@ from services.product_service import ProductService
 #                                'test', 'test',
 #                                'test', 0.43,
 #                                'sosedi/test.jpg'))
+
+print(ProductService().delete('test_product'))
