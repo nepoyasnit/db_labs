@@ -20,7 +20,7 @@ RESTARAUNT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/
 SHOP_CREATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_scripts/create_script.sql'
 SHOP_READ_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_scripts/read_script.sql'
 SHOP_UPDATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_scripts/update_script.sql'
-SHOP_DELETE_SCRIPT_PATH = ''
+SHOP_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_scripts/delete_script.sql'
 
 # CODES
 OK_CODE = 200

@@ -30,3 +30,9 @@ class ShopService:
                                                      owner, work_time, category, old_name))
         if query:
             return OK_CODE
+
+    def delete(self, name):
+        query = self.engine.get_query_result(sql_path=SHOP_DELETE_SCRIPT_PATH,
+                                             fields=(name,))
+        if query:
+            return OK_CODE
