@@ -22,3 +22,11 @@ class ShopService:
                                              fields=(name,))
         if query:
             return query
+
+    def update(self, old_name, new_name, phone_number, email, owner,
+               work_time, category):
+        query = self.engine.get_query_result(sql_path=SHOP_UPDATE_SCRIPT_PATH,
+                                             fields=(new_name, phone_number, email,
+                                                     owner, work_time, category, old_name))
+        if query:
+            return OK_CODE
