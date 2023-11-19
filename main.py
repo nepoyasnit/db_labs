@@ -1,18 +1,7 @@
-from services.product_service import ProductService
+from services.dish_service import DishService
 
-# print(ProductService().create('Соседи','test',
-#                               10, 0,'test',
-#                               'test', 'test',
-#                               'test', 0.43,
-#                               'sosedi/test.jpg'))
+# print(DishService().create('Mak.by', 'test', 2.00, 0,
+#                            'test', 'test', 0.5,
+#                            'mak/test.jpg'))
 
-# print(ProductService().read('test'))
 
-# print(ProductService().update('Соседи','test',
-#                               'test1',10, 0,
-#                               'test',
-#                                'test', 'test',
-#                                'test', 0.43,
-#                                'sosedi/test.jpg'))
-
-print(ProductService().delete('test_product'))

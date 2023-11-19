@@ -6,13 +6,13 @@ USER_GET_DATA_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_s
 USER_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/user_scripts/delete_script.sql'
 
 # RESTARAUNT PATHS
-RESTARAUNT_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts'
+RESTARAUNT_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                  '/create_script.sql.sql')
-RESTARAUNT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts'
+RESTARAUNT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                '/read_script.sql')
-RESTARAUNT_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts'
+RESTARAUNT_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                  '/update_script.sql')
-RESTARAUNT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts'
+RESTARAUNT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                  '/delete_script.sql.sql')
 
 # SHOP PATHS
@@ -32,6 +32,15 @@ PRODUCT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql
                               '.sql')
 SHOP_BY_NAME_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts'
                             '/shop_by_name_script.sql')
+
+# DISH PATHS
+DISH_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts/'
+                           'create_script.sql')
+DISH_READ_SCRIPT_PATH = ''
+DISH_UPDATE_SCRIPT_PATH = ''
+DISH_DELETE_SCRIPT_PATH = ''
+RESTARAUNT_BY_NAME_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts'
+                                  '/restaurant_by_name_script.sql')
 
 # CODES
 OK_CODE = 200
