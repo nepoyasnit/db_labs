@@ -1,14 +1,9 @@
-from services.shop_service import ShopService
+from services.product_service import ProductService
 
-# print(ShopService().create('test', '+375294432003',
-#                            'test@sosedi.by', 'test',
-#                            '09:00-12:00', 'test'))
+# print(ProductService().create('Соседи','test',
+#                               10, 0,'test',
+#                               'test', 'test',
+#                               'test', 0.43,
+#                               'sosedi/test.jpg'))
 
-# print (ShopService().read('test'))
-
-# print(ShopService().update('test', 'test1', '+375294432003',
-#                             'test@sosedi.by', 'test',
-#                             '09:00-12:00', 'test'))
-
-print(ShopService().delete('test1'))
 
