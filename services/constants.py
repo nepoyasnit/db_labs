@@ -7,7 +7,7 @@ USER_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scr
 
 # RESTARAUNT PATHS
 RESTARAUNT_CREATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts/create_script.sql'
-RESTARAUNT_READ_SCRIPT_PATH = ''
+RESTARAUNT_READ_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/restaraunt_scripts/read_script.sql'
 RESTARAUNT_UPDATE_SCRIPT_PATH = ''
 RESTARAUNT_DELETE_SCRIPT_PATH = ''
 

@@ -5,4 +5,4 @@ from services.restaraunt_service import RestarauntService
 #                                  3, 5, 'test',
 #                                  '09:00-00:00'))
 
-
+print(RestarauntService().read('KFC'))
