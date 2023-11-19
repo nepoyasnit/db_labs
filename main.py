@@ -4,4 +4,4 @@ from services.dish_service import DishService
 #                            'test', 'test', 0.5,
 #                            'mak/test.jpg'))
 
-
+print(DishService().read('test'))

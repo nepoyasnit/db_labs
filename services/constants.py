@@ -9,7 +9,7 @@ USER_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scr
 RESTARAUNT_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                  '/create_script.sql.sql')
 RESTARAUNT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
-                               '/read_script.sql')
+                               '/read_script.sql.sql')
 RESTARAUNT_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                  '/update_script.sql')
 RESTARAUNT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
@@ -24,7 +24,7 @@ SHOP_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scr
 # PRODUCT PATHS
 PRODUCT_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/create_script'
                               '.sql')
-PRODUCT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/read_script'
+PRODUCT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/read_script.sql'
                             '.sql')
 PRODUCT_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/product_scripts/update_script'
                               '.sql')
@@ -36,7 +36,7 @@ SHOP_BY_NAME_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_s
 # DISH PATHS
 DISH_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts/'
                            'create_script.sql')
-DISH_READ_SCRIPT_PATH = ''
+DISH_READ_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts/read_script.sql'
 DISH_UPDATE_SCRIPT_PATH = ''
 DISH_DELETE_SCRIPT_PATH = ''
 RESTARAUNT_BY_NAME_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts'
