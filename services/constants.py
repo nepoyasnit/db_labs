@@ -18,7 +18,7 @@ RESTARAUNT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/
 # SHOP PATHS
 
 SHOP_CREATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_scripts/create_script.sql'
-SHOP_READ_SCRIPT_PATH = ''
+SHOP_READ_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_scripts/read_script.sql'
 SHOP_UPDATE_SCRIPT_PATH = ''
 SHOP_DELETE_SCRIPT_PATH = ''
 
