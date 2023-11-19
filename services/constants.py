@@ -40,7 +40,8 @@ DISH_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scri
                          'read_script.sql')
 DISH_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts/'
                            'update_script.sql')
-DISH_DELETE_SCRIPT_PATH = ''
+DISH_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts/'
+                           'delete_script.sql')
 RESTAURANT_BY_NAME_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts'
                                   '/restaurant_by_name_script.sql')
 

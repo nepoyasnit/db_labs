@@ -35,3 +35,9 @@ class DishService:
                                                      weight, photo_url, old_name))
         if query:
             return OK_CODE
+
+    def delete(self, name):
+        query = self.engine.get_query_result(sql_path=DISH_DELETE_SCRIPT_PATH,
+                                             fields=(name,))
+        if query:
+            return OK_CODE
