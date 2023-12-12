@@ -1,10 +1,9 @@
-from services.order_service import OrderService
-import datetime
+from services.shop_addresses_service import ShopAddressesService
 
-# print(OrderService().create(False, datetime.datetime(2023, 11, 11, 11, 11, 11, 0), 1, 2))
+# print(ShopAddressesService().create('test', 2))
 
-# print(OrderService().read('test'))
+# print(ShopAddressesService().read(4))
 
-# print(OrderService().update(False, datetime.datetime(2021,1,1), 1,2, 4))
+# print(ShopAddressesService().update('test1', 2, 4))
 
-# print(OrderService().delete(4))
+# print(ShopAddressesService().delete(4))

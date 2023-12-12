@@ -51,6 +51,22 @@ ORDER_READ_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scri
 ORDER_UPDATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/order_scripts/update_script.sql'
 ORDER_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/order_scripts/delete_script.sql'
 
+# SHOP ADDRESSES PATHS
+SHOP_ADDRESS_CREATE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_addresses_scripts'
+                            '/create_script.sql')
+SHOP_ADDRESS_READ_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_addresses_scripts'
+                          '/read_script.sql')
+SHOP_ADDRESS_UPDATE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_addresses_scripts'
+                            '/update_script.sql')
+SHOP_ADDRESS_DELETE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_addresses_scripts'
+                            '/delete_script.sql')
+
+# RESTARAUNT ADDRESSES PATHS
+
+REST_ADDRESS_CREATE_PATH = ('/home')
+REST_ADDRESS_READ_PATH = ('')
+REST_ADDRESS_UPDATE_PATH = ('')
+REST_ADDRESS_DELETE_PATH = ('')
 
 # CODES
 OK_CODE = 200
