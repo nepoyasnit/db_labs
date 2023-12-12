@@ -36,7 +36,7 @@ class UserService:
         if query:
             return OK_CODE
         else:
-            return
+            return ERROR_CODE
 
     def delete(self, email):
         query = self.engine.get_query_result(sql_path=USER_DELETE_SCRIPT_PATH,
