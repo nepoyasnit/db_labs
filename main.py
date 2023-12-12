@@ -1,13 +1,10 @@
-from services.dish_service import DishService
+from services.order_service import OrderService
+import datetime
 
-# print(DishService().create('Mak.by', 'test', 2.00, 0,
-#                            'test', 'test', 0.5,
-#                            'mak/test.jpg'))
+# print(OrderService().create(False, datetime.datetime(2023, 11, 11, 11, 11, 11, 0), 1, 2))
 
-# print(DishService().read('test'))
+# print(OrderService().read('test'))
 
-# print(DishService().update('Mak.by', 'test','test1', 2.00, 0,
-#                            'test', 'test', 0.5,
-#                            'mak/test.jpg'))
+# print(OrderService().update(False, datetime.datetime(2021,1,1), 1,2, 4))
 
-# print(DishService().delete('test1'))
+# print(OrderService().delete(4))

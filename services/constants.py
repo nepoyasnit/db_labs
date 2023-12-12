@@ -45,6 +45,14 @@ DISH_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_sc
 RESTAURANT_BY_NAME_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_scripts'
                                   '/restaurant_by_name_script.sql')
 
+# ORDER PATHS
+ORDER_CREATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/order_scripts/create_script.sql'
+ORDER_READ_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/order_scripts/read_script.sql'
+ORDER_UPDATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/order_scripts/update_script.sql'
+ORDER_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/order_scripts/delete_script.sql'
+
+
 # CODES
 OK_CODE = 200
-NOT_REGISTERED_ERROR = 404
+NOT_REGISTERED_ERROR = 400
+ERROR_CODE = 404
