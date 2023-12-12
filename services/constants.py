@@ -7,13 +7,13 @@ USER_DELETE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scr
 
 # RESTAURANT PATHS
 RESTAURANT_CREATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
-                                 '/create_script.sql.sql')
+                                 '/create_script.sql')
 RESTAURANT_READ_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                '/read_script.sql.sql')
 RESTAURANT_UPDATE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
                                  '/update_script.sql')
 RESTAURANT_DELETE_SCRIPT_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/restaurant_scripts'
-                                 '/delete_script.sql.sql')
+                                 '/delete_script.sql')
 
 # SHOP PATHS
 SHOP_CREATE_SCRIPT_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/shop_scripts/create_script.sql'
@@ -63,10 +63,14 @@ SHOP_ADDRESS_DELETE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_s
 
 # RESTARAUNT ADDRESSES PATHS
 
-REST_ADDRESS_CREATE_PATH = ('/home')
-REST_ADDRESS_READ_PATH = ('')
-REST_ADDRESS_UPDATE_PATH = ('')
-REST_ADDRESS_DELETE_PATH = ('')
+REST_ADDRESS_CREATE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/rest_addresses_scripts'
+                            '/create_script.sql')
+REST_ADDRESS_READ_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/rest_addresses_scripts'
+                          '/read_script.sql')
+REST_ADDRESS_UPDATE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/rest_addresses_scripts'
+                            '/update_script.sql')
+REST_ADDRESS_DELETE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/rest_addresses_scripts'
+                            '/delete_script.sql')
 
 # CODES
 OK_CODE = 200

@@ -1,9 +1,9 @@
-from services.shop_addresses_service import ShopAddressesService
+from services.rest_addresses_service import RestAddressesService
 
-# print(ShopAddressesService().create('test', 2))
+# print(RestAddressesService().create('test', 2))
 
-# print(ShopAddressesService().read(4))
+# print(RestAddressesService().read(10))
 
-# print(ShopAddressesService().update('test1', 2, 4))
+# print(RestAddressesService().update('test1', 2, 10))
 
-# print(ShopAddressesService().delete(4))
+# print(RestAddressesService().delete(11))
