@@ -72,6 +72,18 @@ REST_ADDRESS_UPDATE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_s
 REST_ADDRESS_DELETE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/rest_addresses_scripts'
                             '/delete_script.sql')
 
+# DISH REVIEWS PATHS
+
+DISH_REVIEWS_CREATE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_reviews_script'
+                           '/create_script.sql')
+DISH_REVIEWS_READ_PATH = '/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_reviews_script/read_script.sql'
+DISH_REVIEWS_UPDATE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_reviews_script'
+                           '/update_script.sql')
+DISH_REVIEWS_DELETE_PATH = ('/home/maksim/Documents/Work/food_app/services/sql_scripts/dish_reviews_script'
+                           '/delete_script.sql')
+
+
+
 # CODES
 OK_CODE = 200
 NOT_REGISTERED_ERROR = 400

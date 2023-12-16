@@ -1,9 +1,10 @@
-from services.rest_addresses_service import RestAddressesService
+import datetime
+from services.dish_reviews_service import DishReviewsService
 
-# print(RestAddressesService().create('test', 2))
+# print(DishReviewsService().create(rating=4.9, description='test', review_time=datetime.datetime.utcnow(), dish_id=1, user_id=2))
 
-# print(RestAddressesService().read(10))
+# print(DishReviewsService().read(3))
 
-# print(RestAddressesService().update('test1', 2, 10))
+# print(DishReviewsService().update(review_id=3, rating=4.3, description='test1', review_time=datetime.datetime.now(), dish_id=1, user_id=2))
 
-# print(RestAddressesService().delete(11))
+print(DishReviewsService().delete(3))
