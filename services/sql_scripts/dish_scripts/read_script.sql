@@ -1,2 +1,2 @@
 SELECT * FROM dishes
-WHERE dish_id = %s;
+WHERE name = %s;

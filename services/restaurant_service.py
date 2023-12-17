@@ -1,6 +1,6 @@
 from db_engine.engine import engine, DbEngine
 from services.constants import RESTAURANT_CREATE_SCRIPT_PATH, RESTAURANT_READ_SCRIPT_PATH, \
-    RESTAURANT_UPDATE_SCRIPT_PATH, RESTAURANT_DELETE_SCRIPT_PATH
+    RESTAURANT_UPDATE_SCRIPT_PATH, RESTAURANT_DELETE_SCRIPT_PATH, RESTAURANT_ALL_PATH
 from constants import OK_CODE
 from services.utils import check_errors
 
@@ -18,9 +18,17 @@ class RestaurantService:
                                                      price, category, work_time))
         return check_errors(query)
 
-    def read(self, restaurant_id):
+    def read(self, name):
         query = self.engine.get_query_result(sql_path=RESTAURANT_READ_SCRIPT_PATH,
-                                             fields=(restaurant_id,))
+                                             fields=(name,))
+        result_code = check_errors(query)
+        if result_code == OK_CODE:
+            return query
+        return result_code
+
+    def read_all(self):
+        query = self.engine.get_query_result(sql_path=RESTAURANT_ALL_PATH, fields=None)
+
         result_code = check_errors(query)
         if result_code == OK_CODE:
             return query

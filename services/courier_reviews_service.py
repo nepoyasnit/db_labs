@@ -1,6 +1,6 @@
 from db_engine.engine import engine, DbEngine
 from services.constants import (COURIER_REVIEWS_CREATE_PATH, COURIER_REVIEWS_READ_PATH, COURIER_REVIEWS_UPDATE_PATH,
-                                COURIER_REVIEWS_DELETE_PATH)
+                                COURIER_REVIEWS_DELETE_PATH, COURIER_REVIEWS_ALL_PATH)
 from constants import OK_CODE
 from services.utils import check_errors
 
@@ -24,6 +24,14 @@ class CourierReviewsService:
         if result == OK_CODE:
             return query
         return result
+
+    def read_all(self):
+        query = self.engine.get_query_result(sql_path=COURIER_REVIEWS_ALL_PATH, fields=None)
+
+        result_code = check_errors(query)
+        if result_code == OK_CODE:
+            return query
+        return result_code
 
     def update(self, review_id, rating, description, review_time, user_id, courier_id):
         query = self.engine.get_query_result(sql_path=COURIER_REVIEWS_UPDATE_PATH, fields=(rating, description,

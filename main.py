@@ -1,2 +1,4 @@
 import datetime
-from services.user_service import UserService
+from services.dish_service import DishService
+
+print(DishService().read_all('KFC'))

@@ -1,6 +1,6 @@
 from db_engine.engine import engine, DbEngine
 from services.constants import PRODUCT_CREATE_SCRIPT_PATH, PRODUCT_READ_SCRIPT_PATH, \
-    PRODUCT_UPDATE_SCRIPT_PATH, PRODUCT_DELETE_SCRIPT_PATH
+    PRODUCT_UPDATE_SCRIPT_PATH, PRODUCT_DELETE_SCRIPT_PATH, PRODUCT_ALL_PATH
 from constants import OK_CODE
 from services.utils import check_errors
 
@@ -19,9 +19,17 @@ class ProductService:
                                                      weight, photo_url))
         return check_errors(query)
 
-    def read(self, product_id):
+    def read(self, shop_name):
         query = self.engine.get_query_result(sql_path=PRODUCT_READ_SCRIPT_PATH,
-                                             fields=(product_id,))
+                                             fields=(shop_name,))
+        result = check_errors(query)
+        if result == OK_CODE:
+            return query
+        return result
+
+    def read_all(self, shop_name):
+        query = self.engine.get_query_result(sql_path=PRODUCT_ALL_PATH, fields=(shop_name,))
+
         result = check_errors(query)
         if result == OK_CODE:
             return query
