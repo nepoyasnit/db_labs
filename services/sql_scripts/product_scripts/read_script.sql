@@ -1,2 +1,2 @@
 SELECT * FROM products
-WHERE name = %s;
+WHERE product_id = %s;

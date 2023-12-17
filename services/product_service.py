@@ -1,6 +1,7 @@
 from db_engine.engine import engine, DbEngine
 from services.constants import PRODUCT_CREATE_SCRIPT_PATH, PRODUCT_READ_SCRIPT_PATH, \
-    PRODUCT_UPDATE_SCRIPT_PATH, PRODUCT_DELETE_SCRIPT_PATH, SHOP_BY_NAME_SCRIPT_PATH
+    PRODUCT_UPDATE_SCRIPT_PATH, PRODUCT_DELETE_SCRIPT_PATH
+from constants import OK_CODE
 from services.utils import check_errors
 
 
@@ -10,33 +11,31 @@ class ProductService:
     def __init__(self):
         self.engine = engine
 
-    def create(self, shop_name, name, price, promo, producer,
+    def create(self, shop_id, name, price, promo, producer,
                country, description, category, weight, photo_url):
-        shop_id = self.engine.get_query_result(sql_path=SHOP_BY_NAME_SCRIPT_PATH,
-                                               fields=(shop_name,))[0][0]
         query = self.engine.get_query_result(sql_path=PRODUCT_CREATE_SCRIPT_PATH,
                                              fields=(shop_id, name, price, promo, producer,
                                                      country, description, category,
                                                      weight, photo_url))
         return check_errors(query)
 
-    def read(self, name):
+    def read(self, product_id):
         query = self.engine.get_query_result(sql_path=PRODUCT_READ_SCRIPT_PATH,
-                                             fields=(name,))
+                                             fields=(product_id,))
+        result = check_errors(query)
+        if result == OK_CODE:
+            return query
+        return result
 
-        return check_errors(query)
-
-    def update(self, shop_name, old_name, new_name, price, promo, producer,
-               country, description, category, weight, photo_url):
-        shop_id = self.engine.get_query_result(sql_path=SHOP_BY_NAME_SCRIPT_PATH,
-                                               fields=(shop_name,))[0][0]
+    def update(self, shop_id, name, price, promo, producer,
+               country, description, category, weight, photo_url, product_id):
         query = self.engine.get_query_result(sql_path=PRODUCT_UPDATE_SCRIPT_PATH,
-                                             fields=(shop_id, new_name, price, promo, producer,
+                                             fields=(shop_id, name, price, promo, producer,
                                                      country, description, category,
-                                                     weight, photo_url, old_name))
+                                                     weight, photo_url, product_id))
         return check_errors(query)
 
-    def delete(self, name):
+    def delete(self, product_id):
         query = self.engine.get_query_result(sql_path=PRODUCT_DELETE_SCRIPT_PATH,
-                                             fields=(name,))
+                                             fields=(product_id,))
         return check_errors(query)

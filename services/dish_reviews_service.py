@@ -1,6 +1,7 @@
 from db_engine.engine import engine, DbEngine
 from services.constants import (DISH_REVIEWS_CREATE_PATH, DISH_REVIEWS_READ_PATH, DISH_REVIEWS_UPDATE_PATH,
-                                DISH_REVIEWS_DELETE_PATH, OK_CODE)
+                                DISH_REVIEWS_DELETE_PATH)
+from constants import OK_CODE
 from services.utils import check_errors
 
 
@@ -18,8 +19,10 @@ class DishReviewsService:
     def read(self, review_id):
         query = self.engine.get_query_result(sql_path=DISH_REVIEWS_READ_PATH, fields=(review_id,))
 
-        if check_errors(query) == OK_CODE:
+        result = check_errors(query)
+        if result == OK_CODE:
             return query
+        return result
 
     def update(self, review_id, rating, description, review_time, dish_id, user_id):
         query = self.engine.get_query_result(sql_path=DISH_REVIEWS_UPDATE_PATH, fields=(rating, description,

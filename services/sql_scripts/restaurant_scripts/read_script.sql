@@ -1,2 +1,2 @@
 SELECT * FROM restaraunts
-WHERE name = %s;
+WHERE restaraunt_id = %s;

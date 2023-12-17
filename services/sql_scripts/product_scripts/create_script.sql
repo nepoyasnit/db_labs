@@ -4,3 +4,4 @@ INSERT INTO products(shop_id, name, price, promo,
 VALUES
 (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 returning TRUE;
+

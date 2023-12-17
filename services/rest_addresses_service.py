@@ -1,6 +1,7 @@
 from db_engine.engine import engine, DbEngine
 from services.constants import REST_ADDRESS_CREATE_PATH, REST_ADDRESS_READ_PATH, REST_ADDRESS_UPDATE_PATH, \
-                            REST_ADDRESS_DELETE_PATH, OK_CODE
+                            REST_ADDRESS_DELETE_PATH
+from constants import OK_CODE
 from services.utils import check_errors
 
 
@@ -20,8 +21,7 @@ class RestAddressesService:
 
         if result_code == OK_CODE:
             return query
-        else:
-            return result_code
+        return result_code
 
     def update(self, address, restaurant_id, address_id):
         query = self.engine.get_query_result(sql_path=REST_ADDRESS_UPDATE_PATH, fields=(address, restaurant_id,

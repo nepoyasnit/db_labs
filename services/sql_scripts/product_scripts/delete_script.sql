@@ -1,3 +1,3 @@
 DELETE FROM products
-WHERE name = %s
+WHERE product_id = %s
 returning TRUE;

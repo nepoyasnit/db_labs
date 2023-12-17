@@ -1,2 +1,2 @@
 SELECT * FROM shops
-WHERE name = %s;
+WHERE shop_id = %s;
